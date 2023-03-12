@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Raleway:ital,wght@0,100;0,400;0,600;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-family: "Climate Crisis", cursive;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Climate Crisis", cursive;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+}
+
+h1 {
+  font-family: "Climate Crisis", cursive;
+  font-weight: 500;
+  font-size: 30px;
+  align-content: center;
+}
+
+h2 {
+  color: #FFD200;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+h5 {
+  color: #FFD200;
+}
+
+blockquote {
+  color: black;
+}
+
+p {
+  color: white;
+}
+
+.card-textt {
+  color: white;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.btn {
+  color: black;
+}
+
+.card {
+  transition: 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+#set {
+  transition: all 1s;
+}
+
+#set:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=estilo.css.map */

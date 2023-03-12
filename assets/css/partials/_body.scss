@@ -6,22 +6,6 @@ body {
     font-weight: 200;
 }
 
-.navbar-brand {
-    font-family: 'Climate Crisis', cursive;
-    font-size: 20px;
-    color:black
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.navbar-brand {
-    font-weight: 500;
-}
-
 h1 {
     font-family: 'Climate Crisis', cursive;
     font-weight: 500;
@@ -30,13 +14,13 @@ h1 {
 }
 
 h2 {
-    color: #FFD200;
+    color: $mainColor;
     font-weight: 200;
     font-size: 30px;
 }
 
 h5 {
-    color: #FFD200;
+    color: $mainColor;
 }
 
 blockquote {
@@ -51,11 +35,6 @@ p {
     color:white;
     font-weight: 200;
     font-size: 17px;
-}
-
-footer {
-    align-items: center;
-    justify-content: center;
 }
 
 .btn {
