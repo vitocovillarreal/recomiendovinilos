@@ -41,11 +41,8 @@ blockquote {
   color: black;
 }
 
-p {
-  color: white;
-}
-
-.card-textt {
+/* Estilos: cards */
+.card-text {
   color: white;
   font-weight: 200;
   font-size: 17px;
@@ -56,15 +53,21 @@ p {
 }
 
 .card {
-  transition: 1s;
+  transition: 0.5s;
 }
 
+.card-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos: animaciones */
 .card:hover {
   transform: scale(1.1);
 }
 
 #set {
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 #set:hover {
@@ -79,6 +82,96 @@ p {
 
 ::selection{
   background-color: #FFD200;
+  color:black
+}
+
+/* Estilos: grid */
+.grid {
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+      "item1 item2"
+      "item1 item3";
+  gap: 2rem;
+  }
+
+.grid_item {
+  border-radius: 2rem;
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.grid_item h3 {
+  color: black;
+  background-color: #FFD200;
+  font-family: "Climate Crisis", cursive;
+  font-weight: 400;
+  padding: .5rem;
+}
+
+.grid_item1 {
+  grid-area: item1;
+  background-image: url("../img/categoria-1.png");
+  height: 700px;
+}
+
+.grid_item2 {
+  grid-area: item2;
+  background-image: url("../img/categoria-parlantes_1.jpg");
+}
+
+.grid_item3 {
+  grid-area: item3;
+  background-image: url("../img/categoria-3.jpg");
+}
+
+.grid_item {
+  transition: 0.5s;
+}
+
+.grid_item:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos: tienda */
+
+.cards {
+  display: flex;
+  }
+
+.card-tienda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.card img {
+  max-width: 100%;
+}
+
+.card-tienda h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.card p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.card-tienda a {
+  color: white;
+  background-color: #FFD200;
+  padding: .75rem;
+  text-decoration: none;
 }
 
 footer {
