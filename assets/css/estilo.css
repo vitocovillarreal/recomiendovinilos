@@ -18,7 +18,7 @@ body {
   font-family: "Climate Crisis", cursive;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
-}
+  }
 
 h1 {
   font-family: "Climate Crisis", cursive;
@@ -37,28 +37,9 @@ h5 {
   color: #FFD200;
 }
 
-blockquote {
-  color: black;
-}
-
 /* Estilos: cards */
-.card-text {
-  color: white;
-  font-weight: 200;
-  font-size: 17px;
-}
-
-.btn {
-  color: black;
-}
-
 .card {
   transition: 0.5s;
-}
-
-.card-link {
-  text-decoration: none;
-  color: white;
 }
 
 /* Estilos: animaciones */
@@ -173,8 +154,3 @@ blockquote {
   padding: .75rem;
   text-decoration: none;
 }
-
-footer {
-  align-items: center;
-  justify-content: center;
-}/*# sourceMappingURL=estilo.css.map */
