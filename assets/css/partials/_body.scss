@@ -55,6 +55,10 @@ body {
         "item1 item3";
     gap: 2rem;
 
+    @include mobile {
+      flex-direction: column;
+    }
+    
     .grid_item {
         border-radius: 2rem;
         background-size: cover;

@@ -69,6 +69,11 @@ body h2 h5 {
   grid-template-areas: "item1 item2" "item1 item3";
   gap: 2rem;
 }
+@media screen and (max-width: 576px){
+  .grid {
+    flex-direction: column;
+  }
+}
 .grid .grid_item {
   border-radius: 2rem;
   background-size: cover;
