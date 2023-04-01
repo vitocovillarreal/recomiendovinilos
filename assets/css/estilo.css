@@ -69,12 +69,8 @@ body h2 h5 {
   grid-template-areas: "item1 item2" "item1 item3";
   gap: 2rem;
 }
-@media screen and (max-width: 576px){
-  .grid {
-    flex-direction: column;
-  }
-}
-.grid .grid_item {
+
+.grid_item {
   border-radius: 2rem;
   background-size: cover;
   background-position: center center;
@@ -83,30 +79,36 @@ body h2 h5 {
   flex-direction: column;
   align-items: start;
 }
-.grid .grid_item h3 {
+
+.grid_item h3 {
   color: black;
   background-color: #FFD200;
   font-family: "Climate Crisis", cursive;
   font-weight: 400;
   padding: 0.5rem;
 }
-.grid .grid_item1 {
+
+.grid_item1 {
   grid-area: item1;
   background-image: url("../img/categoria-1.png");
   height: 700px;
 }
-.grid .grid_item2 {
+
+.grid_item2 {
   grid-area: item2;
   background-image: url("../img/categoria-parlantes_1.jpg");
 }
-.grid .grid_item3 {
+
+.grid_item3 {
   grid-area: item3;
   background-image: url("../img/categoria-3.jpg");
 }
-.grid .grid_item {
+
+.grid_item {
   transition: 0.5s;
 }
-.grid .grid_item:hover {
+
+.grid_item:hover {
   transform: scale(1.1);
 }
 
@@ -133,11 +135,71 @@ body h2 h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
-.card-tienda .card-tienda h4 .card-tienda a, .card-tienda a .card-tienda a {
+
+.card-tienda a {
   color: white;
   background-color: #FFD200;
   padding: 0.75rem;
   text-decoration: none;
+}
+
+/* Estilos: Carrusel marcas */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  width: 1000px;
+  height: 100px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 9s linear infinite;
+}
+
+.slide img {
+  height: 100px;
+  padding: 0 30px 0 30px;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.slider::before, .slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 .cards {
